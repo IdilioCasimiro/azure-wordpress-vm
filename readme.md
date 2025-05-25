@@ -13,10 +13,11 @@ This project has the goal of deploying a simple wordpress installation on an Azu
 
 ## Steps to deploy
 
-1. On project root directory, run `terraform validate` to make sure the configuration is valid.
-2. Make sure **azure-cli** is installed on your machine and after CLI authenticathion, run `terraform apply`.
-3. After checking all the resources that will be created, confirm the apply writing *yes*.
-4. Usually the wordpress installation script takes some time to completely install it, so wait 5 or 10 min in order to have a fullly functional wordpress vm.
+1. On project root directory, run `terraform init` to initialize terraform and download providers.
+2. Run `terraform validate` to make sure the configuration is valid.
+3. Make sure **azure-cli** is installed on your machine and after CLI authenticathion, run `terraform apply`.
+4. After checking all the resources that will be created, confirm the apply writing *yes*.
+5. Usually the wordpress installation script takes some time to completely install it, so wait 5 or 10 min in order to have a fullly functional wordpress vm.
 
 ## What will be outputed after deploying resources?
 
